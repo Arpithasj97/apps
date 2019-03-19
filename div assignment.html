@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>table</title>
+<style>
+   div{
+         border:solid;
+		 width:100px;
+		 height:100px;
+		 display:inline-block;   /*for same line*/
+		 text-align:center;    /*for printing descriptn in the center of the 1st line of box*/
+		    /*for printing descriptn in the center of the box*/
+		 /*box-sizing:border-box; applied on the content of the box*/
+		 margin:20px 10px 25px 25px;  /*space b/w the boxes*/
+		 border-radius:100px;
+		
+      }
+
+
+</style> 
+</head>
+<body>
+
+ <div style="background-color:yellow" onclick="changeColor(this)" ;></div>
+ <div style="background-color:lightgreen" onclick="changeColor(this)" ;></div>
+ <div style="background-color:green" onclick="changeColor(this)" ;></div>
+ <div style="background-color:red" onclick="changeColor(this)";></div>
+ <input type="button" value="start" onclick="changeColor(this)";/>
+ 
+ <script>
+ 
+  
+  function changeColor(temp)
+  {
+   setInterval(bounce,1000,temp);
+  }
+   /*temp.style.display="none";
+   temp.style.backgroundColor="black";
+   temp.style.position="relative";
+   temp.style.top="500px";*/
+  
+  var flag=true;
+  function bounce(temp)
+  {
+   if(flag)
+    {
+	 temp.style.position="relative";
+	 temp.style.top="200px";
+	 flag=false;
+	}
+   else
+   {
+    temp.style.position="relative";
+	temp.style.top="0px";
+	flag=true;
+   }
+  } 
+ </script>
+</body>
+</html>

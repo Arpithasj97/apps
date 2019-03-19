@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>form</title>
+</head>
+<body onload="callMe()">
+    <h1>Employee Registration form</h1>
+	<form onsubmit="callMe()">
+	Employee Name:
+	<input<input id="id1" type="text" autofocus onfocus="callMe()" onchange="pop1()" onblur="callMe1()" name="name"/><br /><br /> 
+    Employee Password: 
+    <input id="id2" type="password" name="password" oninput="pop1" size="10" pattern="[A-Z a-z 0-9]+"><br /><br /> 
+    Employee Gender:
+    <input id="id3" type="radio" name="gender" value="Male" checked/>Male
+	<input id="id4" type="radio" name="gender" value="Female"/>Female <br /><br />
+    Cities lived in:
+    <input id="id5"  type="checkbox" name="city1" value="Bangalore"/>Bangalore
+    <input id="id6" type="checkbox" name="city2" value="Mysore"/>Mysore
+	<input id="id7" type="checkbox" name="city3" value="Mumbai"/>Mumbai
+	<input id="id8" type="checkbox" name="city4" value="Pune"/>Pune
+	<br /><br />
+	Address:
+	<textarea id="id9" name="address" ></textarea><br /><br />
+	Technologies:
+	<select name="tech" >
+		<option id="id10" class="c1" value="PHP">PHP</option>
+		<option id="id11" class="c2" value="HTML">HTML</option>
+		<option id="id12" class="c3" value="CSS">CSS</option>
+		<option id="id13" class="c4" value="Javascript">Javascript</option>
+	</select></br /><br />
+	<input id="id14"  type="submit" value="Submit Form" >
+	<input id="id15" type="reset" value="Reset Form">
+	<input id="id16" type="button" value="Click Me" onclick="callMe()">
+	</form>
+	Entered values are:<br/><span id="output"></span>
+	
+	<script>
+	  function pop1(){
+	                     document.getElementById("disp").innerHTML="youn entered: "+document.getElementById("id1").value;
+			         }
+					 
+	  function callMe(){
+	                      console.log("on Focused");
+					   }
+					   
+	  function callMe(){
+	                      alert("on Blur");
+		               }
+					   
+	  function display(){
+                           var gender="";
+                           var arr=document.getElementsByClassName("c1");
+                              for(var i=0;i<arr.length;i++)
+                                  {
+                                    if(arr[i].checked)
+                                      {
+                                         gender=arr[i].value;
+										 breaks
+                                      }										 
+					   
+					   
+					   
+					   
+					   
+    </script>
+</body>
+</html>
+
+
+
+
+
+

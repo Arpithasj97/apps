@@ -1,0 +1,57 @@
+<!DOCTYPE  html>
+<html>
+<head><title>form</title></head>
+<body>
+<form action="www.google.com" method="GET">
+     <table border="0" cellpadding="5">
+      <tr>
+	     <td><label><b>Name</b></label></td>
+		 <td><input type="text" placeholder="name" id="one" /></td>
+	  </tr>	 
+	  <tr> 
+		 <td><label><b>repeat name</b></label></td>
+		 <td><input type="text" placeholder="enter name" id="two" pattern="[A-Z a-z 0-9]+" /></td>
+		 
+	  </tr>
+	  <tr>
+	    <td><label><b>Residential Address</b></label></td>
+		<td><input type="textarea" placeholder="ënter address" id="current" name="a1"/></td>
+	</tr>
+	<tr>
+	   <td><input type="checkbox" onclick="address()" name="show address" value="Address" id="id1" checked"/>same as above
+	   </td>
+	   </tr>
+	  
+	<tr>
+	    <td><label><b>Permanent Address</b></label></td>
+		<td><input type="textarea" placeholder="enter address" id="id2" /></td>
+	</tr>
+	   <script src="C:\Users\Arpitha\Desktop\examples\javascript\jquery/jquery-3.3.1.min.js"></script>
+	  <script>
+	  $(document).ready(function() {
+    $('#one').keyup(function(e) {
+        var txtVal = $(this).val();
+        $('#two').val(txtVal);
+    });
+    
+    $('#two').keyup(function(e) {
+        var txtVal = $(this).val();
+        $('#one').val(txtVal);
+    });
+});
+
+function address()
+        {
+            var a1=document.getElementById("current").value;
+            var b1=document.getElementById("id1");
+            var empty=" ";
+            if(b1.checked){
+            document.getElementById("id2").value=a1;
+            }
+            else {
+                document.getElementById("id2").value=empty;
+            }
+        }
+
+	</script>
+	

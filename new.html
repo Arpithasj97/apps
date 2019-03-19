@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html> 
+<head> <title>Form</title> 
+</head> 
+<body> <h1>Employee Registration Form</h1>
+ <form method="GET" action="https:www.google.com">
+ Employee Name :
+ <input type="text" autofocus name="name" minlength="6" maxlength="15" placeholder="Full Name" onfocus="callMe()" onblur="callMe1()"/><br /><br /> 
+ Employee Password: 
+ <input type="password" name="password" placeholder="Password" size="10" pattern="[A-Z a-z 0-9]+"><br /><br /> 
+  Employee Gender:
+  <input type="radio" name="gender" value="Male" checked/>Male <input type="radio" name="gender" value="Female"/>Female <br /><br />
+  Cities lived in:
+  <input type="checkbox" name="city1" value="Bangalore"/>Bangalore
+  <input type="checkbox" name="city2" value="Mysore"/>Mysore
+	<input type="checkbox" name="city3" value="Mumbai"/>Mumbai
+	<input type="checkbox" name="city4" value="Pune"/>Pune
+	<br /><br />
+	Address:
+	<textarea name="address" ></textarea><br /><br />
+	Technologies:
+	<select name="tech" >
+		<option value="PHP">PHP</option>
+		<option value="HTML">HTML</option>
+		<option value="CSS">CSS</option>
+		<option value="Javascript">Javascript</option>
+	</select></br /><br />
+	<input type="submit" value="Submit Form" >
+	<input type="reset" value="Reset Form">
+	<input type="button" value="Click Me" onclick="callMe()">
+	</form>
+	<script>
+	  function callMe(){
+	     alert("clicked");
+		 
+          }
+    </script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>registration form</title>
+</head>
+<body>
+    <h2>Employee Registration Form </h2>
+<form action="www.google.com" method="GET">
+     <table border="0" cellpadding="5">
+      <tr>
+	     <td><label><b>Employee name</b></label></td>
+		 <td><input type="text" placeholder="employeee name" /></td>
+	  </tr>	 
+	  <tr> 
+		 <td><label><b>Employee password</b></label></td>
+		 <td><input type="password" placeholder="enter password" pattern="[A-Z a-z 0-9]+" /></td>
+		 
+	  </tr>
+	  <tr>
+	     <td><label><b>Employee Gender</b></label></td>
+		 <td><input type="Radio" name="gender" value="male" class="c1"/>Male
+		      <input type="Radio" name="gender" value="female" class="c2"/>Female</br>	     
+		 </td>
+      </tr>
+      <tr>
+          <td><label><b>Cities lived in</b></label></td>
+          <td><input type="checkbox" name="city1" value="blr" "checked"/>Banglore
+		       <input type="checkbox" name="city2" value="chn" "checked" />Chennai
+			   <input type="checkbox" name="city3" value="del" "checked"/>Delhi
+			   <input type="checkbox" name="city4" value="klt" "checked"/>Kolkata </br>
+		  </td>
+	  </tr>
+	  <tr>
+	   <td><label><b>Address</b></label></td>
+	   <td><textarea rows="5" col="10" name="Address"></textarea><br/>
+	   </td>
+	  </tr>
+	  <tr>
+	  <td><label><b>Technologies</b></label></td>
+	   <td><select name="Technologies">
+	         <option value="html">please select</option>
+	         <option value="html">HTML</option>
+		     <option value="css">CSS</option>
+		     <option value="bootstrap">BOOTSTRAP</option>
+		     <option value="js">JS</option>
+	   </select></td><br/>
+	  </tr>
+	  <tr>
+         <td> 			  
+			<input type="submit" value="submit form">
+			<input type="reset" value="reset">
+            <input type="button" value="click me" onclick="showInput();">	
+                 <p><span id='display'></span></p>
+				    
+         </td>
+	  </tr>
+	  </table>
+	  </form>
+</body>
+</html>

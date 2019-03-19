@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>facebook</title>
+</head>
+<body>
+    <h2>Facebook </h2>
+<form action="www.google.com" method="GET">
+     <table border="0" cellpadding="5">
+      <tr>
+	     <td><label><b>User name</b></label></td>
+		 <td><input type="text" placeholder="user name" /></td>
+	  </tr>	 
+	  <tr> 
+		 <td><label><b>user password</b></label></td>
+		 <td><input type="password" placeholder="enter password" id="myInput" pattern="[A-Z a-z 0-9]+" /></td>
+		 
+	  </tr>
+	  <tr>
+	    <td><label><b>repeat password</b></label></td>
+		 <td><input type="password" placeholder="confirm password" id="ourInput" pattern="[A-Z a-z 0-9]+" /></td>
+		 
+	  </tr>
+	    <tr>
+	   <td><input type="checkbox" onclick="myFunction()" name="show password" value="password" "checked"/>show password
+	   </td>
+	   </tr>
+	
+	   <tr>
+         <td> 			  
+			<input type="submit" value="submit form">
+			<input type="reset" value="reset">	    
+         </td>
+	  </tr>
+	   <script>
+	 function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+ /*function myFunction2() {
+  var x = document.getElementById("ourInput");
+  if (x.type === "password") {
+    x.type = "text";
+      document.getElementById("myPsw").disabled = true;
+
+  } else {
+    x.type = "password";
+	document.getElementById("myPsw").disabled = false;
+
+  }
+}*/
+
+</script>
+	
+	   </form>
+	   </body>
+
+	  
